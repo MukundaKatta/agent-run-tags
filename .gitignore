@@ -6,4 +6,6 @@ build/
 .venv/
 .pytest_cache/
 .ruff_cache/
+.coverage
+htmlcov/
 *.egg

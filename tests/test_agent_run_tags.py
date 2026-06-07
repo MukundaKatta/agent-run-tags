@@ -269,6 +269,11 @@ def test_combine_any_or_fail():
     assert not f.matches(tags)
 
 
+def test_tag_filter_repr():
+    r = repr(TagFilter.all_of("a"))
+    assert "TagFilter" in r
+
+
 # ---------------------------------------------------------------------------
 # RunRegistry — register / get / unregister
 # ---------------------------------------------------------------------------
